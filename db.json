@@ -1,0 +1,24 @@
+{
+    "stats": [
+      {
+        "id": "01",
+        "title": "Action:",
+        "amount": 25
+      },
+      {
+        "id": "02",
+        "title": "Comedy:",
+        "amount": 11
+      },
+      {
+        "id": "03",
+        "title": "Crime:",
+        "amount": 36
+      },
+      {
+        "id": "04",
+        "title": "Kids:",
+        "amount": 4
+      }
+    ]
+}
