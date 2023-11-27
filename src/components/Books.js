@@ -22,7 +22,7 @@ function Books() {
         <h2>All Books</h2>
         <Row>
           {books.map((data) => (
-            <Col md="4" className="mt-2">
+            <Col md="3" className="mt-2">
               <BookCard key={data.id} {...data} />
             </Col>
           ))}

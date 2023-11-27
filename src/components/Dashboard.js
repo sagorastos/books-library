@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { fetchStats } from "../api";
-import { Jumbotron, Button, Table, Row, Col, Badge, Container } from 'react-bootstrap';
+import { Jumbotron, Button, Table, Row, Col, Badge, Container, ExampleCarouselImage, Carousel} from 'react-bootstrap';
 
 function Dashboard() {
     // const [stats, setStats] = useState([]);
@@ -30,9 +30,17 @@ function Dashboard() {
     //         </thead>
     //     </Table>
     // </div>
-    <Container><br></br><br></br>
-      <h3>Hello, This is my book library!!!</h3>
-    </Container>
+    
+      <Carousel>
+      <Carousel.Item>
+        <img src='/carousel.jpg' width="100%" height="850rem"></img>
+        <Carousel.Caption>
+          <h3>Books Library</h3>
+          <p>Hello, this is my Books Library and i'm so happy to create it!!!</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  
   )
 }
 
