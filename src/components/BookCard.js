@@ -1,7 +1,10 @@
 import React from 'react'
 import { Card, Button, Row, Col } from 'react-bootstrap'
+import { deleteBook } from '../api'
+import { useNavigate } from 'react-router-dom';
 
-function BookCard({id, title, author, imagePath}) {
+function BookCard({ id, title, author, imagePath }) {
+  const navigate = useNavigate();
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={imagePath} />
@@ -11,8 +14,15 @@ function BookCard({id, title, author, imagePath}) {
           Συγγραφέας: {author}
         </Card.Text>
         <Row>
-        <Col><Button variant="primary">Details</Button></Col>
-        <Col><Button variant="danger">Delete</Button></Col>
+          {/* <Col><Button variant="primary">Details</Button></Col> */}
+          <Col>
+            <Button
+              variant="danger"
+              onClick={() => {
+                deleteBook(id)
+                navigate("/");
+              }}
+            >Delete</Button></Col>
         </Row>
       </Card.Body>
     </Card>

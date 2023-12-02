@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Container, Form } from 'react-bootstrap';
+import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { addBook } from '../api';
 
@@ -25,42 +25,52 @@ function AddBook() {
     }
 
     return (
-        <Container>
-            <h1>Add Book</h1>
+        <Container className="square border border-2 mt-4">
+            <h3 className='mt-3'>Add Book</h3>
+            <Row className="justify-content-md-center">
+                <Col lg="6">
+                    <hr></hr>
+                </Col></Row>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" key={"title"} controlId={title}>
                     <Form.Label>Title</Form.Label>
-                    <Form.Control
-                        type="text"
-                        placeholder="Title"
-                        value={title}
-                        name="title"
-                        onChange={(e) => setTitle(e.target.value)}
-                    />
+                    <Row className="justify-content-md-center">
+                        <Col lg="6">
+                            <Form.Control
+                                type="text"
+                                placeholder="Title"
+                                value={title}
+                                name="title"
+                                onChange={(e) => setTitle(e.target.value)}
+                            /></Col></Row>
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Author</Form.Label>
-                    <Form.Control
-                        type="text"
-                        placeholder="Author"
-                        value={author}
-                        name="author"
-                        onChange={(e) => setAuthor(e.target.value)}
-                    />
+                    <Row className="justify-content-md-center">
+                        <Col lg="6">
+                            <Form.Control
+                                type="text"
+                                placeholder="Author"
+                                value={author}
+                                name="author"
+                                onChange={(e) => setAuthor(e.target.value)}
+                            /></Col></Row>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Form.Label>ImagePath</Form.Label>
-                    <Form.Control
-                        type="text"
-                        placeholder="Image Path"
-                        value={imagepath}
-                        name="ImagePath"
-                        onChange={(e) => setImagePath(e.target.value)}
-                    />
+                    <Form.Label>Image</Form.Label>
+                    <Row className="justify-content-md-center">
+                        <Col lg="6">
+                            <Form.Control
+                                type="text"
+                                placeholder="Image Path"
+                                value={imagepath}
+                                name="ImagePath"
+                                onChange={(e) => setImagePath(e.target.value)}
+                            /></Col></Row>
                 </Form.Group>
                 <Button
-                    variant='primary'
-                    className='float-right'
+                    variant="outline-secondary"
+                    className='float-right mb-3'
                     onClick={() => {
                         modifyCourseData();
                         navigate("/");
@@ -68,7 +78,7 @@ function AddBook() {
                 >Add Book</Button>
             </Form>
 
-        </Container>
+        </Container >
     )
 }
 

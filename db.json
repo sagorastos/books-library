@@ -35,28 +35,16 @@
       "author": "Nesbo Jo"
     },
     {
-      "id": "03",
-      "title": "Μικρές κυρίες",
-      "imagePath": "/kyries.jpg",
-      "author": "Louisa May Alcott"
-    },
-    {
       "id": "04",
       "title": "Κυνήγι μαγισσών",
       "imagePath": "/magissa.jpg",
       "author": "Stacey Halls"
     },
     {
-      "title": "spiros",
-      "imagePath": "s",
-      "author": "ag",
-      "id": "PmO1vwb"
-    },
-    {
-      "title": "fgh",
-      "imagePath": "fgh",
-      "author": "fgh",
-      "id": "v_bLCaY"
+      "title": "Μικρές Κυρίες",
+      "imagePath": "kyries.jpg",
+      "author": "Louisa May Alcott",
+      "id": "RpnPoMd"
     }
   ]
 }
