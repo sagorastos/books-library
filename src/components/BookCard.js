@@ -17,11 +17,23 @@ function BookCard({ id, title, author, imagePath }) {
           {/* <Col><Button variant="primary">Details</Button></Col> */}
           <Col>
             <Button
+              variant="secondary"
+              // onClick={() => {
+              //   deleteBook(id)
+              //   navigate("/");
+              // }}
+              onClick={() => {
+                navigate(`/books/${id}`)
+              }}
+            >View</Button></Col>
+            <Col>
+            <Button
               variant="danger"
               onClick={() => {
                 deleteBook(id)
                 navigate("/");
               }}
+              
             >Delete</Button></Col>
         </Row>
       </Card.Body>

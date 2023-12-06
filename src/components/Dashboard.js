@@ -31,7 +31,7 @@ function Dashboard() {
     //     </Table>
     // </div>
     
-      <Carousel controls={false}>
+      <Carousel indicators={false}>
       <Carousel.Item>
         <img src='/carousel.jpg' width="100%" height="850rem"></img>
         <Carousel.Caption>

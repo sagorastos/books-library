@@ -13,10 +13,10 @@ export const fetchStats = () =>
 export const fetchBooks = () =>
   axios.get(`${API_BASE_URL}/${ENDPOINTS.books}`).then(({ data }) => data);
 
-// export const fetchBooks = (id) =>
-//   axios
-//     .get(`${API_BASE_URL}/${ENDPOINTS.books}/${id}`)
-//     .then(({ data }) => data);
+export const fetchBook = (id) =>
+  axios
+    .get(`${API_BASE_URL}/${ENDPOINTS.books}/${id}`)
+    .then(({ data }) => data);
 
 
 export const addBook = (data) =>

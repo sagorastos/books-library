@@ -6,6 +6,7 @@ import Dashboard from './components/Dashboard';
 import Header from './components/Header';
 import Books from './components/Books';
 import AddBook from './components/AddBook';
+import DetailBook from './components/DetailBook';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Dashboard />} />
           <Route path="books" element={<Books />} />
-          <Route path="addbook" element={<AddBook />} />
+          <Route path="addbook" element={<Dashboard />} />
+          <Route path="books/:id" element={<DetailBook />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

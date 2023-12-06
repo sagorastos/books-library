@@ -23,28 +23,25 @@
   ],
   "books": [
     {
-      "id": "01",
-      "title": "Η σιωπηλή ασθενής",
-      "imagePath": "/patient.jpg",
-      "author": "Michaelides Alex"
-    },
-    {
       "id": "02",
       "title": "Ματωμένη σελήνη",
       "imagePath": "/selini.jpg",
-      "author": "Nesbo Jo"
+      "author": "Nesbo Jo",
+      "details": "test"
     },
     {
       "id": "04",
       "title": "Κυνήγι μαγισσών",
       "imagePath": "/magissa.jpg",
-      "author": "Stacey Halls"
+      "author": "Stacey Halls",
+      "details": "test"
     },
     {
       "title": "Μικρές Κυρίες",
       "imagePath": "kyries.jpg",
       "author": "Louisa May Alcott",
-      "id": "RpnPoMd"
+      "id": "RpnPoMd",
+      "details": "test"
     }
   ]
 }
